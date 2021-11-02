@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+body main #banner .clock {
+  height: 313px;
+  width: 348px;
+  background: #dde1e7;
+  border: 11px solid black;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 58px 439px;
+}
+
+body main #banner .clock .center-nut {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #404040;
+  z-index: 2;
+  position: absolute;
+}
+
+body main #banner .clock .center-nut2 {
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background: #404040;
+  z-index: 15;
+  position: absolute;
+}
+
+body main #banner .clock .indicators div {
+  position: absolute;
+  width: 2px;
+  height: 13px;
+  background: #404040;
+}
+
+body main #banner .clock .indicators div span {
+  color: red;
+  padding: -41px 0px;
+  position: absolute;
+  top: -34px;
+  left: -6px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+body main #banner .sec-hand {
+  position: absolute;
+}
+
+body main #banner .sec-hand .sec {
+  height: 180px;
+  width: 180px;
+  z-index: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: -89px;
+  top: -100px;
+}
+
+body main #banner .sec-hand .sec::before {
+  position: absolute;
+  content: '';
+  height: 110px;
+  width: 7px;
+  background: #000000ad;
+  border-radius: 5px;
+}
+
+body main #banner .sec-hand .sec::after {
+  position: absolute;
+  content: '';
+  height: 35px;
+  width: 7px;
+  background: #000000ad;
+  top: 105px;
+  border-radius: 5px;
+}
+
+body main #banner .min-hand {
+  position: absolute;
+}
+
+body main #banner .min-hand .min {
+  height: 140px;
+  width: 140px;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: -69px;
+  top: -83px;
+}
+
+body main #banner .min-hand .min::before {
+  position: absolute;
+  content: '';
+  width: 3px;
+  top: -15px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 60px solid black;
+}
+
+body main #banner .min-hand .min::after {
+  position: absolute;
+  content: '';
+  width: 3px;
+  top: 40px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-top: 60px solid black;
+}
+
+body main #banner .hr-hand {
+  position: absolute;
+}
+
+body main #banner .hr-hand .hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  z-index: 4;
+  left: -49px;
+  top: -59px;
+}
+
+body main #banner .hr-hand .hr::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+  border-bottom: 35px solid red;
+}
+
+body main #banner .hr-hand .hr:after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  top: 34px;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  border-top: 25px solid red;
+}
+
+.indicators div:nth-child(1) {
+  -webkit-transform: rotate(30deg) translateY(-100px);
+          transform: rotate(30deg) translateY(-100px);
+}
+
+.indicators div:nth-child(2) {
+  -webkit-transform: rotate(60deg) translateY(-100px);
+          transform: rotate(60deg) translateY(-100px);
+}
+
+.indicators div:nth-child(3) {
+  background: #3498db;
+  -webkit-transform: rotate(90deg) translateY(-100px);
+          transform: rotate(90deg) translateY(-100px);
+}
+
+.indicators div:nth-child(4) {
+  -webkit-transform: rotate(120deg) translateY(-100px);
+          transform: rotate(120deg) translateY(-100px);
+}
+
+.indicators div:nth-child(5) {
+  -webkit-transform: rotate(150deg) translateY(-100px);
+          transform: rotate(150deg) translateY(-100px);
+}
+
+.indicators div:nth-child(6) {
+  background: #3498db;
+  -webkit-transform: rotate(180deg) translateY(-100px);
+          transform: rotate(180deg) translateY(-100px);
+}
+
+.indicators div:nth-child(7) {
+  -webkit-transform: rotate(210deg) translateY(-100px);
+          transform: rotate(210deg) translateY(-100px);
+}
+
+.indicators div:nth-child(8) {
+  -webkit-transform: rotate(240deg) translateY(-100px);
+          transform: rotate(240deg) translateY(-100px);
+}
+
+.indicators div:nth-child(9) {
+  background: #3498db;
+  -webkit-transform: rotate(270deg) translateY(-100px);
+          transform: rotate(270deg) translateY(-100px);
+}
+
+.indicators div:nth-child(10) {
+  -webkit-transform: rotate(300deg) translateY(-100px);
+          transform: rotate(300deg) translateY(-100px);
+}
+
+.indicators div:nth-child(11) {
+  -webkit-transform: rotate(330deg) translateY(-100px);
+          transform: rotate(330deg) translateY(-100px);
+}
+
+.indicators div:nth-child(12) {
+  background: #3498db;
+  -webkit-transform: rotate(360deg) translateY(-100px);
+          transform: rotate(360deg) translateY(-100px);
+}
+/*# sourceMappingURL=style.css.map */
